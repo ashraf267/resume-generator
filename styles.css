@@ -1,0 +1,64 @@
+/*
+Built by Ashraf Otagun
+github: www.github.com/ashraf267
+twitter: www.twitter.com/ashraf_otagun
+linkedin: www.linkedin.com/in/ashraf-otagun-244a571ab
+*/
+.field{
+	display: block;
+	margin: 5px;
+	padding: 5px;
+	font-family: calibri;
+}
+.parent-label{
+	display: block;
+	font-size: 25px;
+	letter-spacing: 2px;
+	margin: 5px;
+	padding: 5px;
+}
+.child-label{
+	margin: 3px;
+	font-family: calibri;
+	text-transform: capitalize;	
+}
+.btn{
+	display: block;
+	color: black;
+	margin: 5px auto;
+	padding: 5px;
+	font-family: calibri;
+}
+#header{
+	display: none;
+	border-bottom: 1px dotted #ddd;
+	margin: 5px 0;
+}
+#fullname{
+	font-family: calibri;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+#address, #tel{
+	font-family: calibri;
+	font-size: 17px;
+	text-align: center;
+}
+#email, #github, #linkedin, #deg, #uni, #level{
+	margin: 0 3px;
+	padding: 3px;
+	font-family: calibri;
+	text-align: left;
+}
+#job-title, #edu, #skill, #experience{
+	font-size: 25px;
+	font-family: calibri;
+}
+.p-skills{
+	display: none;
+	margin:  0 3px;
+	padding: 3px;
+	font-family: calibri;
+	text-align: left;
+}

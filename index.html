@@ -1,0 +1,133 @@
+<!--
+Built by Ashraf Otagun
+github: www.github.com/ashraf267
+twitter: www.twitter.com/ashraf_otagun
+linkedin: www.linkedin.com/in/ashraf-otagun-244a571ab
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale =1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<form id="form" action="#" name="myform" method="POST" onsubmit="return myFunction()">
+
+		<!-- Basic info: firstname, lastname, othername, address, phone-no, email, github and linkedin -->
+
+		<label class="parent-label">BASIC INFORMATION</label>
+		<input class="field" type="text" name="firstname" placeholder="Enter firstname" required>
+		<input class="field" type="text" name="lastname" placeholder="Enter lastname" required>
+		<input class="field" type="text" name="othername" placeholder="Enter othername">
+		<input class="field" type="text" name="address" placeholder="Enter address" required>
+		<input class="field" type="tel" name="phone" placeholder="Enter phone no" required>
+		<input class="field" type="email" name="email" placeholder="Enter email" required>
+		<input class="field" type="url" name="github" placeholder="https://www.github.com/demo1234" required>
+		<input class="field" type="url" name="linkedin" placeholder="https://www.linkedin.com/demo1234" requirde>
+
+		<!-- Job title: web developer, mobile developer and web an mobile developer -->
+
+		<label class="parent-label">JOB TITLE</label>
+		<input type="radio" name="job-title" id="web-dev" value="web developer">
+		<label class="child-label" for="web-dev">web developer</label><br>
+		<input type="radio" name="job-title" id="mobile-dev" value="mobile developer">
+		<label class="child-label" for="mobile-dev">mobile developer</label><br>
+		<input type="radio" name="job-title" id="web and mobile dev" value="web and mobile developer">
+		<label class="child-label" for="web and mobile dev">web an mobile developer</label>
+
+		<!-- Education: Degree, Course, University name and Level of study -->
+
+		<label class="parent-label">EDUCATION</label>
+		<input class="field" type="text" name="degree" placeholder="Bsc. Computer science">
+		<input class="field" type="text" name="university" placeholder="University of Ilorin, Nigeria">
+		<input type="radio" name="level" id="undergrad" value="undergraduate">
+		<label class="child-label" for="undergrad">undergraduate</label><br>
+		<input type="radio" name="level" id="grad" value="graduate">
+		<label class="child-label" for="grad">graduate</label>
+
+		<!-- Experience: junior, mid and senior -->
+
+		<label class="parent-label">EXPERIENCE</label>
+		<input type="radio" name="experience" id="jnr" value="junior(1yr)">
+		<label class="child-label" for="jnr">junior(1yr)</label><br>
+		<input type="radio" name="experience" id="mid" value="mid(3yrs)">
+		<label class="child-label" for="mid">mid(3yrs)</label><br>
+		<input type="radio" name="experience" id="snr" value="senior(5yrs)">
+		<label class="child-label" for="snr">senior(5yrs)</label>
+
+		<!-- Skills -->
+
+		<label class="parent-label">SKILLS</label>
+		<input type="checkbox" id="sk1" name="skill-1">
+		<label class="child-label" for="skill-1">HTML</label><br>
+		<input type="checkbox" id="sk2" name="skill-2">
+		<label class="child-label" for="skill-2">CSS</label><br>
+		<input type="checkbox" id="sk3" name="skill-3">
+		<label class="child-label" for="skill-3">Bootstrap</label><br>
+		<input type="checkbox" id="sk4" name="skill-4">
+		<label class="child-label" for="skill-4">Javascript</label><br>
+		<input type="checkbox" id="sk5" name="skill-5">
+		<label class="child-label" for="skill-5">Jquery</label><br>
+		<input type="checkbox" id="sk6" name="skill-6">
+		<label class="child-label" for="skill-6">Json</label><br>
+		<input type="checkbox" id="sk7" name="skill-7">
+		<label class="child-label" for="skill-7">PHP</label><br>
+		<input type="checkbox" id="sk8" name="skill-8">
+		<label class="child-label" for="skill-8">Laravel</label><br>
+		<input type="checkbox" id="sk9" name="skill-9">
+		<label class="child-label" for="skill-9">Node.js</label><br>
+		<input type="checkbox" id="sk10" name="skill-10">
+		<label class="child-label" for="skill-10">Mysql</label><br>
+		<input type="checkbox" id="sk11" name="skill-11">
+		<label class="child-label" for="skill-11">React.js</label><br>
+		<input type="checkbox" id="sk12" name="skill-12">
+		<label class="child-label" for="skill-12">React native</label>
+		<!-- <input type="checkbox" id="sk13" name="skill-13">
+		<label class="child-label" for="skill-13">Add new skill here</label> -->
+
+		<!-- preview and print button -->
+
+		<input class="btn" type="submit" value="preview">
+		<input onclick="printResume()" class="btn" type="button" value="print">
+	</form>
+
+	<!-- output: basic info -->
+
+	<header id="header">
+	<h1 id="fullname"></h1>
+	<p id="address"></p>
+	<p id="tel"></p>
+	</header>
+	<p id="email"></p>
+	<p id="github"></p>
+	<p id="linkedin"></p>
+	<p id="job-title"></p>
+	<p id="edu"></p>
+	<p id="deg"></p>
+	<p id="uni"></p>
+	<p id="level"></p>
+	<p id="experience"></p>
+	<p id="skill"></p>
+	
+	<!-- output: skills selected from checkbox -->
+
+	<p id="p1" class="p-skills">HTML</p>
+	<p id="p2" class="p-skills">CSS</p>
+	<p id="p3" class="p-skills">Bootstrap</p>
+	<p id="p4" class="p-skills">Javascript</p>
+	<p id="p5" class="p-skills">Jquery</p>
+	<p id="p6" class="p-skills">Json</p>
+	<p id="p7" class="p-skills">PHP</p>
+	<p id="p8" class="p-skills">Laravel</p>
+	<p id="p9" class="p-skills">Node.js</p>
+	<p id="p10" class="p-skills">Mysql</p>
+	<p id="p11" class="p-skills">React.js</p>
+	<p id="p12" class="p-skills">React native</p>
+	<!-- <p id="p13" class="p-skills">Add new skill here</p> -->
+
+	<script type="text/javascript" src="myscript.js"></script>
+</body>
+</html>
